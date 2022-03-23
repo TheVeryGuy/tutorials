@@ -19,6 +19,7 @@ $data->title = $_POST['title'];
 $data->content = $_POST['content'];
 $data->save();
 echo $data->id;
+echo 'test';
 
 
 header('Location:' . $_SERVER['HTTP_REFERER']);
