@@ -10,6 +10,7 @@ class Article extends Model
 
     public string $title;
     public string $content;
+    public int $authors_id;
 
     /**
      * @return string
@@ -33,5 +34,20 @@ class Article extends Model
     public function getContent(): string
     {
         return $this->content;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAuthors(): object
+    {
+        if (empty($this->authors_id)) {
+            return 'Автор не указан';
+        };
+        $uId = $this->authors_id;
+        $author = \App\Models\Author::findById($uId);
+
+        return $author;
+
     }
 }

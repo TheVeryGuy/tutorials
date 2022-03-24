@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/../autoloader.php';
-$artticle = App\Models\Article::findById($_GET['id']);
+$article = App\Models\Article::findById($_GET['id']);
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,14 +12,16 @@ $artticle = App\Models\Article::findById($_GET['id']);
     <title>Document</title>
 </head>
 <body>
-<h1><?php echo $artticle->getTitle(); ?></h1>
-<a><?php echo $artticle->getContent(); ?></a>
+<h1><?php echo $article->getTitle(); ?></h1>
+<a><?php echo $article->getContent(); ?></a>
+</br>
+<a>Автор : <?php echo $article->getAuthors()->getName(); ?></a>
 
 <form action="/action.php" method="post">
     <h2>Редактировать</h2>
     <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-    <textarea name="title"><?php echo $artticle->getTitle(); ?></textarea>
-    <textarea name="content"><?php echo $artticle->getContent(); ?></textarea>
+    <textarea name="title"><?php echo $article->getTitle(); ?></textarea>
+    <textarea name="content"><?php echo $article->getContent(); ?></textarea>
     <button type="submit">Сохранить</button>
 </form>
 

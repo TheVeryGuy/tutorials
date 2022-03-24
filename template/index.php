@@ -15,11 +15,12 @@
 <body>
 <h1>
     <?php
-    foreach ($this->data['articles'] as $article){
 //    foreach ($this->data['articles'] as $article){
+   foreach ($this->articles as $article){//магия
     ?>
     <a href="template/article.php?id=<?php echo $article->getId(); ?>"> <?php echo $article->getTitle(); ?></a>
         <a href="/deliteAtrticle.php?id=<?php echo $article->getId(); ?>">Удалить</a>
+       <a>Автор : <?php echo $article->getAuthors()->getName(); ?></a>
         </br></br>
         <?php }
         ?>
