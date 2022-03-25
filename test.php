@@ -42,7 +42,6 @@ function easy($n)
     $isSimple = true;
 
     while(count($result) < $n) {
-
         for($i = 2; $i < $count; $i++) {
             if($count % $i === 0) {
                 $isSimple = false;
@@ -61,7 +60,7 @@ function easy($n)
 
     return $result;
 }
-easy(4);
+var_dump(easy(4));
 
     function simpleNumbersVTwo(int $n): array
     {
@@ -100,12 +99,15 @@ easy(4);
      */
     function getMagicNumber(int $n): int
     {
-        static $connt = 0;
-        $connt = $connt + 1 + $n;
+        static $count = 0;
+//        $count = $count + 1 + $n;
 
-        return $connt;
+        return $n + $count++;
 
     }
+echo(getMagicNumber(1)) . '</br>';
+echo(getMagicNumber(1)) . '</br>';
+echo(getMagicNumber(1)) . '</br>';
 
 
 //function getMagicNumberRecurs(int $n, int $count = $m): int

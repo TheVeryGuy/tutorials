@@ -1,24 +1,12 @@
 <?php
+require __DIR__ . '/App/autoloader.php';
 
-use App\Models\Article;
-use App\View;
+$ctrl = $_GET['ctrl'] ?? 'Index';
 
-require __DIR__ . '/autoloader.php';
+$class = '\App\Controllers\\' . $ctrl;
 
-//$config = \App\Config::getInstance();
-//
-//echo $config->getData()['db']['host'];
+$ctrl = new $class;
+$admin = new App\Controllers\Admin();
+$admin();
 
-$view = new View();
-
-//$view->assign('articles', Article::findAll('LIMIT 3'));
-
-$view->articles = \App\Models\Article::findAll('LIMIT 3'); // магия
-
-
-
-echo $view->render(__DIR__ . '/template/index.php');
-
-
-?>
-
+$ctrl();
