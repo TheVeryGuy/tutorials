@@ -15,7 +15,7 @@ abstract class Controller
     /**
      * @return bool
      */
-    protected function access():bool
+    protected function access(): bool
     {
         return true;
     }
@@ -23,13 +23,14 @@ abstract class Controller
     /**
      * @return void
      */
-    public function __invoke():void
+    public function __invoke(): void
     {
-        if($this->access()){
+        if ($this->access()) {
             $this->handle();
-        }else{
+        } else {
             die('Нет доступа');
         }
     }
+
     abstract protected function handle();
 }
