@@ -20,7 +20,7 @@
     ?>
     <a href="template/article.php?id=<?php echo $article->getId(); ?>"> <?php echo $article->getTitle(); ?></a>
         <a href="/deliteAtrticle.php?id=<?php echo $article->getId(); ?>">Удалить</a>
-       <a>Автор : <?php echo $article->getAuthors()->getName(); ?></a>
+       <a>Автор : <?php echo $article->getAuthors()->getName()?></a>
         </br></br>
         <?php }
         ?>

@@ -39,15 +39,14 @@ class Article extends Model
     /**
      * @return string
      */
-    public function getAuthors(): object
+    public function getAuthors(): object|bool
     {
         if (empty($this->authors_id)) {
             return 'Автор не указан';
         };
         $uId = $this->authors_id;
-        $author = \App\Models\Author::findById($uId);
 
-        return $author;
 
+        return \App\Models\Author::findById($uId);
     }
 }
