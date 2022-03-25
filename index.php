@@ -1,8 +1,6 @@
 <?php
 require __DIR__ . '/App/autoloader.php';
 
-
-
 $ctrl = $_GET['ctrl'] ?? 'Index';
 $user = $_GET['user'] ?? 'user';
 
