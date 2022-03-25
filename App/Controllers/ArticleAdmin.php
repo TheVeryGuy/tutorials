@@ -13,6 +13,8 @@ class ArticleAdmin extends Controller
     {
         $articleId = $_GET['id'] ?? $_POST['id'];
 
+        if ()
+
         $this->view->articles = \App\Models\Article::findById($articleId);
         echo $this->view->render(__DIR__ . '/../../template/articleAdmin.php');
     }

@@ -7,7 +7,7 @@ $ctrl = $_GET['ctrl'] ?? 'Index';
 $user = $_GET['user'] ?? 'user';
 
 if ($user === 'admin') {
-    $ctrl = $ctrl . 'Admin';
+    $ctrl .= 'Admin';
 }
 
 $class = '\App\Controllers\\' . $ctrl;

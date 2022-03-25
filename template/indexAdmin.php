@@ -10,7 +10,7 @@
     //    foreach ($this->data['articles'] as $article){
     foreach ($this->articles as $article) {//магия
         ?>
-        <a href="/?ctrl=Article&id=<?php echo $article->getId(); ?>"> <?php echo $article->getTitle(); ?></a>
+        <a href="/?ctrl=Article&user=admin&id=<?php echo $article->getId(); ?>"> <?php echo $article->getTitle(); ?></a>
         <a href="/App/deliteAtrticle.php?id=<?php echo $article->getId(); ?>">Удалить</a>
         <a>Автор : <?php echo $article->getAuthors()->getName() ?></a>
         </br></br>
