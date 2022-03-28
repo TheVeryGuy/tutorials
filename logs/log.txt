@@ -1,0 +1,12 @@
+App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:34
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(22): App\Db->query()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(14): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(15): App\Controller->__invoke()
+#4 {main}App\DbException: Ошибка 404 - не найдено! in /home/den/PhpstormProjects/tutorials/App/Models/Model.php:41
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Controllers/Article.php(21): App\Models\Model::findById()
+#1 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Article->handle()
+#2 /home/den/PhpstormProjects/tutorials/index.php(16): App\Controller->__invoke()
+#3 {main}
