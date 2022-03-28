@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Db;
+use App\DbException;
 
 abstract class Model
 {
@@ -11,39 +12,46 @@ abstract class Model
     public int $id;
 
     /**
-     * @param string $substitution
-     * @return array
+     * Ищет все элементы таблици
+     *
+     * @param string $substitution - подстановки в запрос.
+     * @return array - Массив объектов
+     * @throws DbException
      */
     public static function findAll(string $substitution = ''): array
     {
         $sql = 'SELECT * FROM ' . static::TABLE . ' ' . $substitution;
         $db = new Db();
-        return $db->query($sql, static::class, []);
+        return $db->query($sql, static::class);
     }
 
     /**
-     * @param int $id
-     * @return bool|static
+     * Ищет элементы таблици по ID.
+     *
+     * @param int $id - ID по которому ищем запись
+     * @return static - объект
+     * @throws DbException - Если объект не найден - 404
      */
-    public static function findById(int $id): static|bool
+    public static function findById(int $id): static
     {
         $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE id =' . $id;
         $db = new Db();
-        $result = $db->query($sql, static::class, []);
+        $result = $db->query($sql, static::class);
         if (empty($result)) {
-            return false;
+            throw new DbException('Ошибка 404 - не найдено!');
         }
 
         return $result[0];
     }
 
-    /**
+    /** Добавляет запись в таблицу
+     *
      * @return void
      */
     public function insert(): void
     {
         $fields = get_object_vars($this);
-        $cosl = [];
+        $cols = [];
         $data = [];
 
         foreach ($fields as $name => $value) {
@@ -65,6 +73,7 @@ abstract class Model
     }
 
     /**
+     * Изменяет запись таблици
      * @return void
      */
     public function update(): void
@@ -90,6 +99,8 @@ abstract class Model
     }
 
     /**
+     * Сохраняет запись
+     *
      * @return void
      */
     public function save(): void
@@ -102,6 +113,8 @@ abstract class Model
     }
 
     /**
+     * Удаляет запись
+     *
      * @return void
      */
     public function delete(): void
@@ -111,6 +124,11 @@ abstract class Model
         $db = new Db();
         $db->execute($sql);
     }
+
+//    public function fill(array $data){
+//        $thi->id =
+//    }
+
 }
 
 

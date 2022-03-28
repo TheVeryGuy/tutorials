@@ -6,21 +6,26 @@ class Author extends Model
 {
     public const TABLE = 'authors';
 
-    public $name;
-    public $email;
+    /** @var string Имя автора */
+    public string $name;
+
+    /** @var string маил автора */
+    public string $email;
 
     /**
-     * @return mixed
+     * Возвращает имя автора
+     * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * @return mixed
+     * Возвращает маил автора
+     * @return string
      */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }

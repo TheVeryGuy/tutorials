@@ -1,4 +1,10 @@
 <?php
+/**
+ * @var View $this
+ */
+
+use App\View;
+
 require __DIR__ . '/../App/autoloader.php';
 ?>
 <!doctype html>
@@ -11,8 +17,8 @@ require __DIR__ . '/../App/autoloader.php';
     <title>Document</title>
 </head>
 <body>
-<h1><?php echo $this->articles->title; ?></h1>
-<a><?php echo $this->articles->content; ?></a>
+<h1><?php echo $this->articles->getTitle(); ?></h1>
+<a><?php echo $this->articles->getContent(); ?></a>
 </br>
 <a>Автор : <?php echo $this->articles->getAuthors()->getName(); ?></a>
 

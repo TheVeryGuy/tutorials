@@ -6,10 +6,14 @@ use App\Magika;
 
 class View
 {
+    /** @var array $data - */
     public array $data = [];
 
+
     /**
-     * @param string $template
+     * Отрисовывает шаблон
+     *
+     * @param string $template - фаил с шаблоном
      * @return void
      */
     public function display(string $template): void
@@ -18,6 +22,8 @@ class View
     }
 
     /**
+     * сохраняет в массив $data
+     *
      * @param string $name
      * @param array $value
      * @return void
@@ -27,11 +33,19 @@ class View
         $this->data[$name] = $value;
     }
 
-    public function render(string $template):string{
+    /**
+     * шаблон после буфера вывода
+     *
+     * @param string $template
+     * @return string - шаблон
+     */
+    public function render(string $template): string
+    {
         ob_start();
         include $template;
         $content = ob_get_contents();
         ob_end_clean();
+
         return $content;
     }
 }

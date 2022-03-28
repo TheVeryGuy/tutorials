@@ -19,22 +19,31 @@ class Db
     }
 
     /**
-     * @param $sql
-     * @param $data
-     * @param $class
-     * @return array|false
+     * Запрос к базе
+     *
+     * @param $sql - содержание запроса
+     * @param $data - параметры запроса
+     * @param $class - имя таблици
+     * @return array - массив объектов
+     * @throws DbException - некоректный запрос
      */
     public function query(string $sql, string $class, array $data = []): array
     {
-        $sth = $this->dbh->prepare($sql);
-        $sth->execute($data);
+        try {
 
+            $sth = $this->dbh->prepare($sql);
+            $sth->execute($data);
+        } catch (\PDOException $error) {
+            throw new DbException('Запрос не может быть выполнен!');
+        }
         return $sth->fetchAll(PDO::FETCH_CLASS, $class);
     }
 
     /**
-     * @param string $query
-     * @param array $params
+     * Запрос к БД
+     *
+     * @param string $query - запрос
+     * @param array $params - параметры
      * @return bool
      */
     public function execute(string $query, array $params = []): bool
@@ -45,7 +54,9 @@ class Db
     }
 
     /**
-     * @return int
+     * Получает последний присвоенный ID
+     *
+     * @return int - ID
      */
     public function getLastID(): int
     {

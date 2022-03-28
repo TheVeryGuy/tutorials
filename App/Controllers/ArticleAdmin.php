@@ -4,21 +4,24 @@ namespace App\Controllers;
 
 
 use App\Controller;
+use App\DbException;
 use App\Models\Article;
 
 
 class ArticleAdmin extends Controller
 {
-    protected function handle()
+    /**
+     * Ищет статью по ID в БД. И выводит её в шаблоне с правами админа
+     * @return void
+     * @throws DbException
+     */
+    protected function handle(): void
     {
         $articleId = $_GET['id'] ?? $_POST['id'];
 
-        $this->view->articles = \App\Models\Article::findById($articleId);
+        $this->view->articles = Article::findById($articleId);
         echo $this->view->render(__DIR__ . '/../../template/articleAdmin.php');
     }
 
-//    protected function access(): bool
-//    {
-//       return isset($_GET['user']) && 'admin' === $_GET['user'];
-//    }
 }
+

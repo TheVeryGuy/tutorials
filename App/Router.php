@@ -3,7 +3,7 @@
 namespace App;
 
 class Router {
-    private $_route = array();
+    private $_route = [];
 
 
     public function setRoute($dir, $file)
