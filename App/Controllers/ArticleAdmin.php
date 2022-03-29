@@ -15,12 +15,12 @@ class ArticleAdmin extends Controller
      * @return void
      * @throws DbException
      */
-    protected function handle(): void
+    protected function handle(array $params): void
     {
         $articleId = $_GET['id'] ?? $_POST['id'];
 
         $this->view->articles = Article::findById($articleId);
-        echo $this->view->render(__DIR__ . '/../../template/articleAdmin.php');
+        echo $this->view->render(__DIR__ . '/../../template/articleAdmin.php', $params);
     }
 
 }

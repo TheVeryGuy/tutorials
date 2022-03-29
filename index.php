@@ -2,6 +2,8 @@
 require __DIR__ . '/App/autoloader.php';
 
 
+$timer = new \SebastianBergmann\Timer\Timer();
+$timer->start();
 
 $ctrl = $_GET['ctrl'] ?? 'Index';
 $user = $_GET['user'] ?? 'user';
@@ -13,7 +15,8 @@ if ($user === 'admin') {
 try {
     $class = '\App\Controllers\\' . $ctrl;
     $ctrl = new $class;
-    $ctrl();
+
+    $ctrl(['duration' => $timer]);
 } catch (\App\DbException $ex) {
     $logger->addLog($ex);
     echo 'Ошибка в БД: ' . $ex->getMessage();
@@ -22,3 +25,4 @@ try {
     $logger->addLog($error);
     throw $error;
 }
+

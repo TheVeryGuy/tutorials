@@ -1,6 +1,7 @@
 <?php
 /**
  * @var array $news
+ * @var \SebastianBergmann\Timer\Timer $duration
  */
 ?>
 </head>
@@ -17,4 +18,7 @@
     ?>
 </h1>
 </body>
+<footer>
+<?php echo 'Шаблон отрисован за : ' . $duration->stop()->asString() ?>
+</footer>
 </html>

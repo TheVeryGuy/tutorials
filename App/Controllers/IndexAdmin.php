@@ -15,10 +15,10 @@ class IndexAdmin extends Controller
      * @return void
      * @throws DbException
      */
-    protected function handle()
+    protected function handle(array $params)
     {
         $this->view->articles = Article::findAll('ORDER BY title LIMIT 3'); // магия
-        echo $this->view->render(__DIR__ . '/../../template/indexAdmin.php');
+        echo $this->view->render(__DIR__ . '/../../template/indexAdmin.php', $params);
     }
 
 }

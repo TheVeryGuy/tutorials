@@ -1,11 +1,10 @@
 <?php
 /**
- * @var View $this
+ * @var array $news
+ * @var \SebastianBergmann\Timer\Timer $duration
  */
 
 use App\View;
-
-require __DIR__ . '/../App/autoloader.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,4 +22,7 @@ require __DIR__ . '/../App/autoloader.php';
 <a>Автор : <?php echo $this->articles->getAuthors()->getName(); ?></a>
 
 </body>
+<footer>
+    <?php echo 'Шаблон отрисован за : ' . $duration->stop()->asString() ?>
+</footer>
 </html>

@@ -52,7 +52,7 @@ class Article extends Model
      * @return object|bool -обьект автора, иначе false
      * @throws DbException
      */
-    public function getAuthors(): ?Article
+    public function getAuthors(): object|bool
     {
         if (empty($this->authors_id)) {
             return 'Автор не указан';

@@ -23,14 +23,14 @@ abstract class Controller
     /**
      * @return void
      */
-    public function __invoke(): void
+    public function __invoke(array $params): void
     {
         if ($this->access()) {
-            $this->handle();
+            $this->handle($params);
         } else {
             die('Нет доступа');
         }
     }
 
-    abstract protected function handle();
+    abstract protected function handle(array $params);
 }

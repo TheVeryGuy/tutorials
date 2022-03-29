@@ -15,10 +15,10 @@ class Article extends Controller
      * @return void
      * @throws DbException
      */
-    protected function handle(): void
+    protected function handle(array $params): void
     {
         $articleId = $_GET['id'] ?? $_POST['id'];
         $this->view->articles = \App\Models\Article::findById($articleId);
-        echo $this->view->render(__DIR__ . '/../../template/article.php');
+        echo $this->view->render(__DIR__ . '/../../template/article.php', $params);
     }
 }

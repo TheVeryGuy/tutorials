@@ -3,6 +3,7 @@
 namespace App;
 
 use Exception;
+use SebastianBergmann\Timer\Timer;
 
 class Logger
 {

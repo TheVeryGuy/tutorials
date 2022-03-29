@@ -13,10 +13,10 @@ class Index extends Controller
      * @return void
      * @throws DbException
      */
-    protected function handle(): void
+    protected function handle(array $params): void
     {
         $this->view->articles = Article::findAll('ORDER BY title LIMIT 3'); // магия
-        echo $this->view->render(__DIR__ . '/../../template/index.php');
+        echo $this->view->render(__DIR__ . '/../../template/index.php', $params);
     }
 
 

@@ -1,8 +1,9 @@
 <?php
-require __DIR__ . '/../App/autoloader.php';
-?>
-
-<!doctype html>
+/**
+ * @var array $news
+ * @var \SebastianBergmann\Timer\Timer $duration
+ */
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,4 +31,7 @@ require __DIR__ . '/../App/autoloader.php';
 </form>
 
 </body>
+<footer>
+    <?php echo 'Шаблон отрисован за : ' . $duration->stop()->asString() ?>
+</footer>
 </html>

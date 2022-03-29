@@ -39,9 +39,10 @@ class View
      * @param string $template
      * @return string - шаблон
      */
-    public function render(string $template): string
+    public function render(string $template, array $params): string
     {
         ob_start();
+        extract($params);
         include $template;
         $content = ob_get_contents();
         ob_end_clean();
