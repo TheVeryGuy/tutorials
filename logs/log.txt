@@ -9,4 +9,427 @@ Stack trace:
 #0 /home/den/PhpstormProjects/tutorials/App/Controllers/Article.php(21): App\Models\Model::findById()
 #1 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Article->handle()
 #2 /home/den/PhpstormProjects/tutorials/index.php(16): App\Controller->__invoke()
+#3 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:47
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(47): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:51
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(51): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 2' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 2' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 2' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 1' at line 1 in /home/den/PhpstormProjects/tutorials/App/Db.php:53
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(53): PDOStatement->execute()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(25): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch class specified in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}PDOException: SQLSTATE[HY000]: General error: No fetch-into object specified. in /home/den/PhpstormProjects/tutorials/App/Db.php:52
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Db.php(52): PDOStatement->fetch()
+#1 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#2 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#3 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#4 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#5 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(36): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(37): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(37): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(38): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Запрос не может быть выполнен! in /home/den/PhpstormProjects/tutorials/App/Db.php:58
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Models/Model.php(39): App\Db->queryEach()
+#1 /home/den/PhpstormProjects/tutorials/App/Controllers/Index.php(18): App\Models\Model::findAll()
+#2 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Index->handle()
+#3 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
+#4 {main}App\DbException: Ошибка 404 - не найдено! in /home/den/PhpstormProjects/tutorials/App/Models/Model.php:56
+Stack trace:
+#0 /home/den/PhpstormProjects/tutorials/App/Controllers/Article.php(21): App\Models\Model::findById()
+#1 /home/den/PhpstormProjects/tutorials/App/Controller.php(29): App\Controllers\Article->handle()
+#2 /home/den/PhpstormProjects/tutorials/index.php(19): App\Controller->__invoke()
 #3 {main}

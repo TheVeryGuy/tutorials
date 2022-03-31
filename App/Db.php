@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Generator;
 use PDO;
 
 class Db
@@ -39,6 +40,29 @@ class Db
         return $sth->fetchAll(PDO::FETCH_CLASS, $class);
     }
 
+
+    /**
+     * @param string $sql
+     * @param string $className
+     * @param array $data
+     * @return Generator
+     * @throws DbException
+     */
+    function queryEach(string $sql, string $className, array $data = []): Generator
+    {
+        $sth = $this->dbh->prepare($sql);
+        $sth->setFetchMode(PDO::FETCH_CLASS, $className);
+        try {
+            $sth->execute($data);
+        } catch (\PDOException $error) {
+            throw new DbException('Запрос не может быть выполнен!');
+        }
+        for ($i = 0; $i < $sth->rowCount(); $i++) {
+            yield $sth->fetch(PDO::FETCH_CLASS);
+        }
+    }
+
+
     /**
      * Запрос к БД
      *
@@ -46,7 +70,8 @@ class Db
      * @param array $params - параметры
      * @return bool
      */
-    public function execute(string $query, array $params = []): bool
+    public
+    function execute(string $query, array $params = []): bool
     {
         $sth = $this->dbh->prepare($query);
 
@@ -58,7 +83,8 @@ class Db
      *
      * @return int - ID
      */
-    public function getLastID(): int
+    public
+    function getLastID(): int
     {
         return $this->dbh->lastInsertId();
     }

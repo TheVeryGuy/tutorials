@@ -1,4 +1,6 @@
 <?php
+
+require __DIR__ . '/App/autoloader.php';
 ///**
 // * @param int $n
 // * @return array н простых чисел
@@ -148,42 +150,73 @@ $cash = [16000, 19000, 42000, 8000];
 //        }
 //}
 
-$i = 0;
-$data = [];
+//$i = 0;
+//$data = [];
+//
+//while (true) {
+//    if ((!isset($name[$i])) && (!isset($age[$i])) && (!isset($cash[$i]))) {
+//        break;
+//    }
+//    $name[$i] = $name[$i] ?? null;
+//    $age[$i] = $age[$i] ?? null;
+//    $cash[$i] = $cash[$i] ?? null;
+//    $data[] = ['name' => $name[$i], 'age' => $age[$i], 'cash' => $cash[$i]];
+//    $i++;
+//}
+//echo '<pre>';
+//var_dump($data);
+//
+//foreach ($data as $key => $human) {
+//
+//    if ($human['age']< 48){
+//        $data[$key]['cash'] = $human['cash'] * 0.5;
+//    }
+//
+//    if ($human['cash'] > 30000){
+//        $data[$key]['name'] = $data[$key-1]['name'] ?? $human['name'];
+//
+//    }
+//
+//    if ($human['age'] > 80 || $human['cash'] < 20000){
+//        $human[$key+1]['name'] = $human['name'];
+//        $human[$key+1]['age'] = ($human['age'] * 0.2) / $human['cash'];
+//        unset($human['name']);
+//    }
+//}
+//
+//
+//echo '<hr>';
+//var_dump($data);
 
-while (true) {
-    if ((!isset($name[$i])) && (!isset($age[$i])) && (!isset($cash[$i]))) {
-        break;
+//function generate($x){
+//    for($x;$x<10;$x++){
+//        yield $x;
+//    }
+//}
+//
+//foreach (generate(5) as $item){
+//    echo $item;
+//}
+
+$model=['Article', 'Author'];
+
+$function = [
+
+    'title' => function(\App\Models\Article $article) {
+
+        return $article->title;
+
+    },
+
+    'trimmedText' => function(\App\Models\Article $article) {
+
+        return mb_strimwidth($article->content, 0, 100);
+
     }
-    $name[$i] = $name[$i] ?? null;
-    $age[$i] = $age[$i] ?? null;
-    $cash[$i] = $cash[$i] ?? null;
-    $data[] = ['name' => $name[$i], 'age' => $age[$i], 'cash' => $cash[$i]];
-    $i++;
-}
+
+];
+$admin = new \App\AdminDataTable($model, $function);
 echo '<pre>';
-var_dump($data);
-
-foreach ($data as $key => $human) {
-
-    if ($human['age']< 48){
-        $data[$key]['cash'] = $human['cash'] * 0.5;
-    }
-
-    if ($human['cash'] > 30000){
-        $data[$key]['name'] = $data[$key-1]['name'] ?? $human['name'];
-
-    }
-
-    if ($human['age'] > 80 || $human['cash'] < 20000){
-        $human[$key+1]['name'] = $human['name'];
-        $human[$key+1]['age'] = ($human['age'] * 0.2) / $human['cash'];
-        unset($human['name']);
-    }
-}
-
-
-echo '<hr>';
-var_dump($data);
-
+var_dump($admin);
 ?>
+

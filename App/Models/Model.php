@@ -18,11 +18,25 @@ abstract class Model
      * @return array - Массив объектов
      * @throws DbException
      */
-    public static function findAll(string $substitution = ''): array
+//    public static function findAll(string $substitution = '')
+//    {
+//        $sql = 'SELECT * FROM ' . static::TABLE . ' ' . $substitution;
+//        $db = new Db();
+//        echo '<pre>';
+////        var_dump($db->query($sql, static::class));
+//        return $db->query($sql, static::class);
+//    }
+
+
+    public static function findAll(string $substitution = '')
     {
         $sql = 'SELECT * FROM ' . static::TABLE . ' ' . $substitution;
         $db = new Db();
-        return $db->query($sql, static::class);
+        $data = [];
+        foreach ($db->queryEach($sql, static::class) as $queryEach){
+            $data[] = $queryEach;
+        }
+        return $data;
     }
 
     /**
@@ -34,9 +48,10 @@ abstract class Model
      */
     public static function findById(int $id): static
     {
-        $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE id =' . $id;
+
+        $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE id = :id';
         $db = new Db();
-        $result = $db->query($sql, static::class);
+        $result = $db->query($sql, static::class, [':id' => $id]);
         if (empty($result)) {
             throw new DbException('Ошибка 404 - не найдено!');
         }
